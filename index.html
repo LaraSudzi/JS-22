@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="./assets/css/bootstrap.css">
+
+    <!-- FA5 CSS -->
+	<link rel="stylesheet" href="./assets/fa/css/all.css">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="./assets/css/style.css">
+
+	<title>Индекс массы тела</title>
+
+	<script src="./assets/js/app.js"></script>
+	
+  </head>
+  <body>
+   
+	<div class="container mt-5">
+		
+		<h1 class="mb-4">Индекс массы тела</h1>
+	
+		<!-- Input Data Form -->
+		<div class='row row-cols-1 row-cols-lg-4 my-4'>
+			<div class="form-group">
+			  <label for="sumInput">Ваш рост (м:)</label>
+			  <input oninput="calc()" type="number" class="form-control" id="sumInput" 	min="0,0" max="2,9" value="3">
+			</div>
+
+			<div class="form-group">
+			  <label for="termInput">Ваш вес (кг:)</label>
+			  <input oninput="calc()" type="number" class="form-control" id="termInput" min="0" max="200" value="200">
+			</div> 
+
+			
+</div>
+		  
+		  <button class="btn btn-primary w-100" onclick="calc()">
+			Рассчитать
+		</button>
+		
+		<!-- /Input Data Form -->
+				
+		<h3 class='my-4 fs-3'>Ваш индекс: <output id="resultPlace">-</output></h3>
+		<h3 class='my-4 fs-5'>Он означает: <output id="resultPlace">-</output></h3>
+
+	</div>
+   
+  </body>
+</html>

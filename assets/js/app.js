@@ -2,12 +2,19 @@
     
 
 function calc (){
-      let height = +heightInput.value;
-      let mass = +massInput.value;
-      console.log (height, mass);
-
+      let mass = +massInput.value; 
+      let height = +heightInput.value; 
+        
       let index = mass / (h * h);
-      }
+
+      index = Math.round (index);
+
+      if(index <= 16) {
+        alert(`Ваш индекс: ${index},выраженный дефицит массы тела.`);
+        console.log('выраженный дефицит массы тела.');
+    }
+         resultPlace.innerHTML = index;
+    } 
 
  
 

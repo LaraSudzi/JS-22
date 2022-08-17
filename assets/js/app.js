@@ -1,29 +1,15 @@
 
-    alert ('Demo');
+    
 
-        function calc (){
-            alert ('calc() Function');
-        }
+function calc (){
+      let height = +heightInput.value;
+      let mass = +massInput.value;
+      console.log (height, mass);
 
- let mass = +prompt ('Ваш вес в кг');
+      let index = mass / (h * h);
+      }
 
- console.log (`Масса тела: ${mass}`);
-
- let h = +prompt ('Ваш рост в см');
-
- h = h / 100;
-
- console.log (`Рост в метрах: ${h}`);
-        
- let index = mass / (h * h);
-
-index = index * 100;
-
-index = Math.round (index);
-
-index = index / 100;
-
-console.log (`индекс: ${index}`);
+ 
 
 
 

@@ -20,23 +20,27 @@
 	
   </head>
   <body>
+
+	<div class="container d-flex flex-column align-items-center">
    
 	<div class="container mt-5">
+
+		
 		
 		<h1 class="mb-4">Индекс массы тела</h1>
 	
 		<!-- Input Data Form -->
 		<div class='row row-cols-1 row-cols-lg-4 my-4'>
-			<div class="form-group">
-			  <label for="heightInput">Ваш рост (cм:)</label>
-			  <input oninput="calc()" type="number" class="form-control" id="heightInput" 	min="1" max="300" value="300">
+			<div class="col m-2">
+				<label class="text-center" for="heightInput">Ваш рост, (см:)</label>
+				<input type="number" class="form-control" id="heightInput" min="3" max="300" value="300">
 			</div>
 
-			<div class="form-group">
-			  <label for="massInput">Ваш вес (кг:)</label>
-			  <input oninput="calc()" type="number" class="form-control" id="massInput" min="1" max="200" value="200">
-			</div>
 			
+			<div class="col m-2">
+				<label for="massInput">Ваш вес, (кг:)</label>
+				<input oninput="calc()" type="number" class="form-control" id="massInput" min="1" max="200" value="200">
+			</div>
 			
 
 	    </div>
@@ -46,12 +50,13 @@
 		
 		<!-- /Input Data Form -->
 	
-		<h3 class='text-center'>Ваш индекс: <output id="resultPlace">-</output></h3>
+		<h3>Ваш индекс: <output id="resultPlace">-</output></h3>
 
-		<h4 class="text-center"><output id="Diagnosis"></output></h4>
+		<h4><output id="Diagnosis"></output></h4>
 		
 
 	</div>
+</div>
    
   </body>
 </html>
